@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devlogs Todolist</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h2>Todolist</h2>
+    <div id="tasks-count">0 Tasks</div>
+    <div id="tasks-done-count">0 Tasks Done</div>
+  </header>
+
+  <div class="todolist-app">
+
+    <h1>Devlogs Todolist</h1>
+
+    <form id="add">
+
+      <input id="task" type="text" placeholder="New Task">
+      <button type="submit">Add</button>
+
+    </form>
+
+    <div id="alertW"></div>
+
+    <div class="tasks-empty"></div>
+
+    <ul id="todolist"></ul>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

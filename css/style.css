@@ -1,0 +1,160 @@
+*,ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0f1742;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+header h2 {
+  flex: 1;
+}
+
+#tasks-count,
+#tasks-done-count {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#tasks-count {
+  background-color: #fff;
+  color: #0688CF;
+  margin-right: 20px;
+}
+
+#tasks-done-count {
+  background-color: #0688CF;
+}
+
+.todolist-app {
+  width: 70%;
+  margin: 100px auto;
+}
+
+.todolist-app h1 {
+  font-weight: bold;
+  color: #0f1742;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.todolist-app #add {
+  width: 80%;
+  margin: auto;
+}
+
+.todolist-app #add input,
+.todolist-app button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.todolist-app #add input {
+  width: calc(90% - 20px);
+  border: 1px solid #d5d5d5;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.todolist-app button {
+  width: 9%;
+  color: #fff;
+  background-color: #0688CF;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .todolist-app {
+    width: 95%;
+  }
+
+  .todolist-app h1 {
+    font-size: 20px;
+  }
+
+  .todolist-app #add input,
+  .todolist-app button {
+    width: 100%;
+  }
+
+  .todolist-app button {
+    margin-top: 20px;
+  }
+}
+
+.tasks-empty {
+  text-align: center;
+  padding: 20px;
+  color: #0688CF;
+}
+
+.todolist-app #todolist {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.todolist-app #todolist .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+}
+
+.todolist-app #todolist .list-item:hover {
+  background-color: #0f1742;
+  color: #FFF;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #0688CF;
+}
+
+.del {
+  color: #b32a2a;
+  cursor: pointer;
+}
+
+.capitalize {
+  text-transform: capitalize;
+  width: 100%;
+  padding: 20px;
+}
+
+.input-null {
+  padding: 10px;
+  color: #fff;
+  background-color: #b32a2a;
+  text-align: center;
+  transition: .5s ease-in-out;
+}
